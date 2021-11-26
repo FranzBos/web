@@ -20,6 +20,10 @@ label {
   margin-left: 5px;
 }
 
+.clickable {
+  cursor: pointer;
+}
+
 .main-container {
   display: flex;
   flex-direction: column;
@@ -29,7 +33,7 @@ label {
   margin-top: 40px;
   margin-bottom: 40px;
   background-color:white;
-  border-radius: 15px;
+  border-radius: 10px;
   overflow: hidden;
   -webkit-box-shadow: 0px 0px 30px 10px rgba(0,0,0,0.3); 
   box-shadow: 0px 0px 30px 10px rgba(0,0,0,0.3);
@@ -53,8 +57,12 @@ input[type="name"] {
   text-transform: capitalize;
 }
 
+input.padded {
+  padding-right: 10px;
+}
+
 button {
-  margin-top: 30px;
+  margin-top: 20px;
   border-radius: 10px;
   height: 40px;
   color: #007AFF;
@@ -71,6 +79,12 @@ button:active {
   border-color: #005A9E;
   background-color: #005A9E;
   color: white;
+}
+
+button:disabled {
+  border-color: #F3F3F3;
+  background-color: #F3F3F3;
+  color: #A9ABAC;
 }
 
 .inputs-container {

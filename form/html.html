@@ -1,40 +1,42 @@
 <head>
   <link rel="stylesheet" href="style.css" />
+  <script src="javascript.js"></script>
 </head>
 
 <body>
   <div class="main-container">
-    
-    <h2 class="title" >Sign up</h3>
 
-    <label>Name</label>
-    <input type="name"/>
+    <h2 class="title">Sign up</h3>
 
-    <label>Email</label>
-    <input type="email" />
+      <label>Name</label>
+      <input type="name" />
 
-    <label>Password</label>
-    <input type="password" />
+      <label>Email</label>
+      <input type="email" />
 
-    <label>Birthdate</label>
-    <input type="date" />
+      <label>Password</label>
+      <input type="password" />
 
-    <label>Gender</label>
-    <div class="inputs-container small-margin">
-      <input type="radio" name="type" value="male" checked />
-      <label class="no-margin" for="male">Male</label>
-    </div>
+      <label>Birthdate</label>
+      <input type="date" class="padded" />
 
-    <div class="inputs-container small-margin">
-      <input type="radio" name="type" value="female" />
-      <label class="no-margin" for="female">Female</label>
-    </div>
+      <label>Gender</label>
+      <div class="inputs-container small-margin">
+        <input class="clickable" type="radio" name="type" value="male" />
+        <label class="no-margin" for="male">Male</label>
+      </div>
 
-    <div class="inputs-container">
-      <input class="no-margin" type="checkbox" value="reminder" />
-      <label class="no-margin" for="reminder">Accept all privacy shit</label>
-    </div>
+      <div class="inputs-container small-margin">
+        <input class="clickable" type="radio" name="type" value="female" />
+        <label class="no-margin" for="female">Female</label>
+      </div>
 
-    <button>Sign up</button>
+      <div class="inputs-container">
+        <input id="privacyCheckBox" onchange="onPrivacyCheckBoxChanged()" class="no-margin clickable" type="checkbox"
+          value="accept-privacy" />
+        <label class="no-margin" for="accept-privacy">Accept all privacy shit</label>
+      </div>
+
+      <button id="signUpButton" disabled>Sign up</button>
   </div>
 </body>
