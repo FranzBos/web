@@ -1,0 +1,94 @@
+h2, input, label, button {
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 12pt;
+}
+
+body {
+  padding-left: 20px;
+  padding-right: 20px;
+  background-image: url(assets/background.png);
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+label {
+  color: black;
+  font-size: 15px;
+  margin-top: 20px;
+  margin-left: 5px;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  padding-bottom: 35px;
+  width: 300px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  background-color:white;
+  border-radius: 15px;
+  overflow: hidden;
+  -webkit-box-shadow: 0px 0px 30px 10px rgba(0,0,0,0.3); 
+  box-shadow: 0px 0px 30px 10px rgba(0,0,0,0.3);
+}
+
+input {
+  margin-top: 5px;
+  border: none;
+  border-radius: 10px;
+  height: 40px;
+  text-indent: 5px;
+  background-color: #F4F4F9;
+}
+
+input[type="radio"] {
+  height: 20px;
+  margin-top: 0px;
+}
+
+input[type="name"] {
+  text-transform: capitalize;
+}
+
+button {
+  margin-top: 30px;
+  border-radius: 10px;
+  height: 40px;
+  color: #007AFF;
+  background-color: white;
+  border: 2px solid #007AFF;
+}
+
+button:hover {
+  background-color: #007AFF;
+  color: white;
+}
+
+button:active {
+  border-color: #005A9E;
+  background-color: #005A9E;
+  color: white;
+}
+
+.inputs-container {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.small-margin {
+  margin-top: 5px;
+}
+
+.title {
+  margin-top: 0px;
+  margin-bottom: 10px;
+  font-size: 20pt;
+}
+
+.no-margin {
+  margin-top: 0px;
+}
