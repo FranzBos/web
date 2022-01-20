@@ -1,0 +1,74 @@
+button, div {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  color: white;
+  border: 0px;
+}
+
+.double {
+  width: 100px;
+}
+
+.triple {
+  width: 150px;
+}
+
+.number {
+  background-color: gray;
+}
+
+.number:active {
+  background-color: black;
+}
+
+.operation {
+  background-color: orange;
+}
+
+.operation:active {
+  background-color: orangered;
+}
+
+.edit {
+  background-color: orange;
+}
+
+.edit:active {
+  background-color: orangered;
+}
+
+.result {
+  background-color: black;
+  color: white;
+  font-size: x-large;
+  text-align: right;
+  padding: 20px;
+}
+
+.main-container {
+  padding: 60px;
+  padding-right: 100px;
+  padding-left: 100px;
+  display: inline-flex;
+  flex-flow: column;
+  background-color: lightgoldenrodyellow;
+}
+
+.button-row {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+}
