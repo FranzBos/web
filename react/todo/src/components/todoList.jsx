@@ -3,7 +3,7 @@ import React, { Component } from "react";
 
 class TodoList extends Component {
     state = {
-        items:[
+        items: [
             "teach dog to do poop outside",
             "clean bike",
             "buy eggs",
@@ -14,11 +14,9 @@ class TodoList extends Component {
     render() { return (
         <React.Fragment>
             <h1>Todo things</h1>
-            <ul>
-                <li>{this.state.items[0]}</li>
-                <li>{this.state.items[1]}</li>
-                <li>{this.state.items[2]}</li>
-            </ul>
+            <ul>{this.state.items.map(item => (
+                <li>{item}</li>
+            ))}</ul>
         </React.Fragment> 
     )}
 }
